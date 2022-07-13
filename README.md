@@ -10,4 +10,4 @@ Inspired by Ilysen's RODHTDS and jopojelly's Helpful Hotkeys.
 
 Licensed under GNU GPLv3 - https://www.gnu.org/licenses/gpl-3.0.en.html
 
-You may commercially use, distribute, modify, and use code from this repository, but under the conditions that you disclose the source.
+You may commercially use, distribute, modify, and use code from this repository, but under the condition that you disclose the source.
