@@ -1,0 +1,3 @@
+displayName = Rod of Discord Keybind
+author = mehdor
+version = 1.0
