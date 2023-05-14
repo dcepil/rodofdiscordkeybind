@@ -1,4 +1,5 @@
 using Microsoft.Xna.Framework.Input;
+using System;
 using Terraria;
 using Terraria.GameInput;
 using Terraria.ID;
@@ -12,7 +13,7 @@ namespace RodOfDiscordKeybind
 
         public override void Load()
         {
-            Hotkey = KeybindLoader.RegisterKeybind(this, "Rod of Discord", Keys.Q);
+            Hotkey = KeybindLoader.RegisterKeybind(this, "Rod of Discord/Harmony", Keys.Q);
         }
 
         public override void Unload()
@@ -26,17 +27,30 @@ namespace RodOfDiscordKeybind
         private int _previousItem;
         private bool _revertItem;
         private const int RodOfDiscordId = ItemID.RodofDiscord;
+        private const int RodOfHarmonyId = ItemID.RodOfHarmony;
+
+        private void HandleRodUsage(int rodId)
+        {
+            _previousItem = Player.selectedItem;
+            _revertItem = true;
+            Player.selectedItem = Player.FindItem(rodId);
+            Player.controlUseItem = true;
+            Player.ItemCheck();
+        }
 
         public override void ProcessTriggers(TriggersSet triggersSet)
         {
-            if (RodOfDiscordKeybind.Hotkey.JustPressed && Player.HasItem(RodOfDiscordId) &&
+            if (RodOfDiscordKeybind.Hotkey.JustPressed &&
                 Player.ItemTimeIsZero && Player.ItemAnimationEndingOrEnded)
             {
-                _previousItem = Player.selectedItem;
-                _revertItem = true;
-                Player.selectedItem = Player.FindItem(RodOfDiscordId);
-                Player.controlUseItem = true;
-                Player.ItemCheck(Main.myPlayer);
+                if (Player.HasItem(RodOfHarmonyId))
+                {
+                    HandleRodUsage(RodOfHarmonyId);
+                }
+                else if (Player.HasItem(RodOfDiscordId))
+                {
+                    HandleRodUsage(RodOfDiscordId);
+                }
             }
         }
 

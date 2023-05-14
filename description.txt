@@ -1,5 +1,5 @@
-A very simple and light-weight mod which lets you set a keybind/hotkey for your Rod of Discord.
-Requires a Rod of Discord to be present in your inventory - the mechanics are unchanged - it just uses the item from your inventory.
-You still have to stop attacking to trigger the Rod of Discord - you cannot use it if you're mid attack/animation.
+A very simple and light-weight mod which lets you set a keybind/hotkey for your Rod of Discord/Rod of Harmony.
+Requires a Rod of Discord/Harmony to be present in your inventory - the mechanics are unchanged - it just uses the item from your inventory.
+You still have to stop attacking to trigger the Rod of Discord/Harmony - you cannot use it if you're mid attack/animation.
 
 Inspired by Ilysen's RODHTDS and jopojelly's Helpful Hotkeys.
