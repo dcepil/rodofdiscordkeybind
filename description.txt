@@ -3,3 +3,10 @@ Requires a Rod of Discord/Harmony to be present in your inventory - the mechanic
 You still have to stop attacking to trigger the Rod of Discord/Harmony - you cannot use it if you're mid attack/animation.
 
 Inspired by Ilysen's RODHTDS and jopojelly's Helpful Hotkeys.
+
+Changelog:
+1.1
+- Updated the mod to support tML for 1.4.4 and the new Rod of Harmony
+
+1.0
+- Initial release
