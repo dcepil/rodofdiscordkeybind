@@ -1,0 +1,9 @@
+Changelog:
+1.2
+- Added support & config options to use RoD/RoH from the player's void bag - this is turned off by default
+
+1.1
+- Updated the mod to support tML for 1.4.4 and the new Rod of Harmony
+
+1.0
+- Initial release

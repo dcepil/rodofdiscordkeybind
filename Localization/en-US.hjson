@@ -1,0 +1,25 @@
+Mods: {
+	RodOfDiscordKeybind: {
+		"Keybinds.Rod of Discord/Harmony.DisplayName": Rod of Discord/Harmony
+
+		Config: {
+			Header: Config
+
+			VoidBagEnabled: {
+				Label: "[i:4131] Toggle RoD/RoH usage from the Void Vault"
+				Tooltip: Enables or disables using the RoD/RoH from the Void Vault via an open Void Bag present in the Player's inventory
+			}
+		}
+
+		Configs: {
+			Config: {
+				DisplayName: Config
+
+				VoidBagEnabled: {
+					Label: "{$Mods.RodOfDiscordKeybind.Config.VoidBagEnabled.Label}"
+					Tooltip: "{$Mods.RodOfDiscordKeybind.Config.VoidBagEnabled.Tooltip}"
+				}
+			}
+		}
+	}
+}
